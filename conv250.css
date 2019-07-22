@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Patua+One');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body, div, p {
+    margin: 0;
+}
+
+body {
+    background-color: #ddd;
+}
+
+.conv250-wrap { 
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    top: 20px; right: 20px; bottom: 20px; left: 20px;
+    margin: auto;
+    text-align: center; 
+    padding: 30px;
+    max-width: 720px;
+    max-height: 400px;
+    background-color: white;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
+}
+
+.conv250-wrap .url {
+    font-size: 12px;
+    opacity: .3;
+}
+
+.conv250-wrap .text-container {
+    position: absolute;
+    width: 80%;
+    top: 45%; left: 50%;
+    transform: translate( -50%, -50% );
+}
+
+.conv250-wrap .text-container #conv250-category {
+    display: inline-block;
+    color: white;
+    background-color: #1db7d3;
+    padding: 3px 20px 4px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 1em;
+}
+
+.conv250-wrap .text-container #conv250-text {
+    margin-top: .7em;
+    font-family: 'Patua One', cursive;
+    font-size: 21px;
+    line-height: 1.5;
+}
+
+.conv250-wrap .text-container .text {
+    font-family: 'Patua One', cursive;
+    font-size: 45px;
+    line-height: 1.2;
+}
+
+.conv250-wrap .text-container .num {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 72px;
+    font-weight: 100;
+    line-height: 1;
+    color: #1db7d3;
+}
+
+.conv250-wrap .button {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    font-weight: 600;
+    padding: 11px 0 13px;
+    border: 1px solid black;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.conv250-wrap .button:hover {
+    background-color: #bbb;
+    border-color: #bbb;
+    color: white;
+}
+
+@media screen and ( max-device-width: 767px ) {
+    .conv250-wrap {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .conv250-wrap .text-container #conv250-text {
+        font-size: 18px;
+    }
+}
